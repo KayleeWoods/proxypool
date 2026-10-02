@@ -1,0 +1,42 @@
+# Proxy Pool Manager configuration
+
+server:
+  listen: "127.0.0.1:8899"
+
+health:
+  test_url: "http://api.ipify.org?format=json"
+  interval: 60s
+  timeout: 10s
+  max_failures: 3
+  quarantine_duration: 300s
+
+pools:
+  - name: brightdata
+    type: http
+    rotation: sticky
+    sticky_ttl: 300s
+    proxies:
+      - host: brd.superproxy.io
+        port: 22225
+        username: hl_c216816a
+        password: YOUR_PASSWORD
+      - host: brd.superproxy.io
+        port: 22225
+        username: hl_cd89d666
+        password: YOUR_PASSWORD
+
+  - name: warp
+    type: socks5
+    rotation: round_robin
+    proxies:
+      - host: 127.0.0.1
+        port: 40000
+
+  - name: datacenter
+    type: http
+    rotation: random
+    proxies:
+      - host: 10.0.0.1
+        port: 3128
+        username: user
+        password: pass

@@ -1,0 +1,3 @@
+bin/
+configs/my.yaml
+configs/*.local.yaml
