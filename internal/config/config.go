@@ -74,10 +74,10 @@ func Load(path string) (*Config, error) {
 		cfg.Health.Timeout = 10 * time.Second
 	}
 	if cfg.Health.MaxFailures == 0 {
-		cfg.Health.MaxFailures = 3
+		cfg.Health.MaxFailures = 1
 	}
 	if cfg.Health.QuarantineDuration == 0 {
-		cfg.Health.QuarantineDuration = 300 * time.Second
+		cfg.Health.QuarantineDuration = 60 * time.Second
 	}
 	for i := range cfg.Pools {
 		p := &cfg.Pools[i]
