@@ -7,10 +7,10 @@ import (
 	"os"
 	"text/tabwriter"
 
-	"github.com/lugaysu/proxypool/internal/api"
-	"github.com/lugaysu/proxypool/internal/config"
-	"github.com/lugaysu/proxypool/internal/health"
-	"github.com/lugaysu/proxypool/internal/pool"
+	"github.com/KayleeWoods/proxypool/internal/api"
+	"github.com/KayleeWoods/proxypool/internal/config"
+	"github.com/KayleeWoods/proxypool/internal/health"
+	"github.com/KayleeWoods/proxypool/internal/pool"
 )
 
 const version = "0.1.0"

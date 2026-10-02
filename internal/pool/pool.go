@@ -7,7 +7,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/lugaysu/proxypool/internal/config"
+	"github.com/KayleeWoods/proxypool/internal/config"
 )
 
 // ProxyState tracks runtime health and stats for a single proxy.

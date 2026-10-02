@@ -1,4 +1,4 @@
-module github.com/lugaysu/proxypool
+module github.com/KayleeWoods/proxypool
 
 go 1.22
 

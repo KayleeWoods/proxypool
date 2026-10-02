@@ -17,7 +17,7 @@ Manage proxies from multiple providers (Bright Data, WARP, residential, datacent
 
 ```bash
 # Clone and build
-git clone https://github.com/lugaysu/proxypool.git
+git clone https://github.com/KayleeWoods/proxypool.git
 cd proxypool
 make build
 

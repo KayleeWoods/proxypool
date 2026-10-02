@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/lugaysu/proxypool/internal/pool"
+	"github.com/KayleeWoods/proxypool/internal/pool"
 )
 
 // Server provides HTTP API endpoints for proxy pool management.

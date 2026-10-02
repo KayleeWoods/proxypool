@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lugaysu/proxypool/internal/config"
-	"github.com/lugaysu/proxypool/internal/pool"
+	"github.com/KayleeWoods/proxypool/internal/config"
+	"github.com/KayleeWoods/proxypool/internal/pool"
 	"golang.org/x/net/proxy"
 )
 
