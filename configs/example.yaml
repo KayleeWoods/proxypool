@@ -7,8 +7,8 @@ health:
   test_url: "http://api.ipify.org?format=json"
   interval: 60s
   timeout: 10s
-  max_failures: 3
-  quarantine_duration: 300s
+  max_failures: 1
+  quarantine_duration: 60s
 
 pools:
   - name: brightdata
